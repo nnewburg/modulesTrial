@@ -1,19 +1,18 @@
+arr = []
+
+function sortNumber(a,b) {
+        return a - b;
+    }
+
 module.exports = {
 
-  num: 45,
   getList: function(){
-    return arr
+    return arr.sort(sortNumber)
   },
+
   addToList: function(x) {
     arr.push(x)
   }
 };
 
-arr = []
 
-// module.exports = {
-//   PHI: 1.618,
-//   explain: function() {
-//     console.log("(X+Y) is to X as X is to Y: (X+Y)≈" + this.PHI);
-//   }
-// };
